@@ -72,8 +72,10 @@ void setup() {
 void loop() {
  flip = !flip;
  if(flip){
+   /* Turn on LED */
   PORTD |= _BV (0);
  }else{
+   /* Turn off LED */
   PORTD &= ~_BV (0);
  }
 
